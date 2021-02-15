@@ -1,4 +1,7 @@
 package io.learning.restaurant.repository;
 
-public class RestaurantRepository {
+import io.learning.restaurant.model.Restaurant;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface RestaurantRepository extends MongoRepository<Restaurant, String> {
 }
